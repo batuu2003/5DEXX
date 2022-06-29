@@ -1,0 +1,60 @@
+Health bar
+SLİDER
+Unity.Engine.UI;
+Transition none
+navigation none
+public Slider slider
+public void setMaxHealth(int health)
+{
+slider.maxValue=health;
+slider.value=health;
+}
+public void setHealth(int health)
+{
+slider.value=health;
+}
+slider maxValue
+slider Value
+void start()
+{
+slider.maxValue=
+
+
+
+
+unıty uı button
+panel fills the enire screen
+SceneManager.LoadScene(SceneManager.GetActiveScene.buildIndex + 1);
+SceneManager.LoadScene();
+File Build settings
+
+
+
+2d movement
+if(Input.GetButtonDown("Jump") && IsGrounded())
+rb.velocity=new Vector2(rb.velocity.x, jumpingPower);
+horizontal=Input.GetAxisRaw("Horizontal");
+rb.velocity(horizontal*speedMove,rb.velocity.y);
+
+private bool IsGrounded()
+{
+return Physics2D.OverlapCircle(groundCheck.position,0.2f,groundLayer);
+}
+Transform groundCheck;
+LayerMask
+
+2d jump movement
+ bool IsGrounded;
+IsGrounded=Physics2d.OverlapCircle(groundCheck,0.2f,groundLayer)
+2d movement flip
+private bool facingRight;
+prvate void flip()
+{
+if(facingRight&&horizontal<0 || !facingRight&&horizontal>0)
+{
+isFacingRight=!isFacingRight;
+Vector3 localScale=transform.localscale;
+localScale.x*=-1f;
+transform.localScale=localScale;
+}
+}
